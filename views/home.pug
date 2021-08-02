@@ -1,0 +1,50 @@
+extends base.pug
+
+block scripts
+  script(src='../staic/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    section#introSection
+        div Welcome to iDance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/4.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+    hr
+    h2 Our Sponsors
+        section
+        img(src= "/static/img/1.jpg", alt= 'Sponsor Image', class= "spImage1")
+        img(src= "/static/img/2.png", alt= 'Sponsor Image', class= "spImage2")
+        img(src= "/static/img/5.jpg", alt= 'Sponsor Image', class= "spImage3")
+        img(src= "/static/img/4.png", alt= 'Sponsor Image', class= "spImage4")
+
+block footer 
+    footer#footer
+        | Copyright © 2019 iDance.com | All Rights Reserved

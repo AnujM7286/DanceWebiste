@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    title iDance - Biggest Dance Academy
+    style
+      include ../static/style.css
+    body
+
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+
+    section#introSection
+        div Welcome to iDance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/4.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+    hr
+    h2 Our Sponsors
+        section
+        img(src= "/static/img/1.jpg", alt= 'Sponsor Image', class= "spImage1")
+        img(src= "/static/img/2.png", alt= 'Sponsor Image', class= "spImage2")
+        img(src= "/static/img/5.jpg", alt= 'Sponsor Image', class= "spImage3")
+        img(src= "/static/img/4.png", alt= 'Sponsor Image', class= "spImage4")
+
+    footer#footer
+        | Copyright © 2019 iDance.com | All Rights Reserved
+
+    script 
+        include ../static/index.js 
