@@ -1,5 +1,5 @@
  # Following are The commands to Add a project on github 
-print("Hello World")
+
 # 1. touch gitignore
 
 # 2. git config --global user.name "Anuj"
